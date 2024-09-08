@@ -75,7 +75,6 @@ guests = [Guest(name) for name in guests_names]
 # Заполнение кафе столами
 cafe = Cafe(*tables)
 # Приём гостей
-# cafe.guest_arrival(*guests)
 cafe.guest_arrival(*guests)
 # Обслуживание гостей
 cafe.discuss_guests()
