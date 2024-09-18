@@ -11,6 +11,7 @@ def read_info(name):
             if not line:
                 break
 
+filenames = [f'./file {number}.txt' for number in range(1, 5)]
 
 if __name__ == '__main__':
     start1 = datetime.now()
@@ -25,4 +26,4 @@ if __name__ == '__main__':
         end2 = datetime.now()
         print(f'{end2 - start2} (Многопроцессорный)')
 
-filenames = [f'./file {number}.txt' for number in range(1, 5)]
+
