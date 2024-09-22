@@ -19,9 +19,9 @@ if __name__ == '__main__':
         read_info(f)
     end1 = datetime.now()
     print(f'{end1 - start1} (Линейный)')
-
-    with multiprocessing.Pool() as pool:
-        start2 = datetime.now()
+    
+    start2 = datetime.now()
+    with multiprocessing.Pool(processes=4) as pool:
         pool.map(read_info, filenames)
         end2 = datetime.now()
         print(f'{end2 - start2} (Многопроцессорный)')
