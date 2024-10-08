@@ -1,4 +1,4 @@
-import module_12_1 as md
+import module_12_1 as md #Импортирую модуль в котором записан код из задачи в моём PyCharm
 import unittest
 
 class RunnerTest(unittest.TestCase):
