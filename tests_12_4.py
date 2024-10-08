@@ -62,7 +62,7 @@ class RunnerTest(unittest.TestCase):
             self.assertEqual(a.distance, 50)
             logging.info('"test_walk" выполнен успешно')
         except ValueError as ex:
-            logging.warning("Неверная скорость для Runner", exe_info=ex)
+            logging.warning("Неверная скорость для Runner", exc_info=ex)
 
     def test_run(self):
         try:
@@ -72,7 +72,7 @@ class RunnerTest(unittest.TestCase):
             self.assertEqual(b.distance, 100)
             logging.info('"test_run" выполнен успешно')
         except TypeError as ex:
-            logging.warning("Неверный тип данных для объекта Runner", exe_info=ex)
+            logging.warning("Неверный тип данных для объекта Runner", exc_info=ex)
 
     def test_challenge(self):
         c = Runner('Leon')
