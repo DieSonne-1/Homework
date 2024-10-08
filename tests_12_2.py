@@ -3,7 +3,7 @@ import unittest
 
 class TournamentTest(unittest.TestCase):
     @classmethod
-    def SetUpClass(cls):
+    def setUpClass(cls):
         cls.all_results = {}
 
     def setUp(self):
