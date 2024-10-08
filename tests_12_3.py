@@ -1,4 +1,4 @@
-import module_12_1 as md, module_12_2 as mod
+import module_12_1 as md, module_12_2 as mod #Импортирую модули с предыдущими кодами по условиям задачи, в моём PyCharm
 import unittest
 
 
